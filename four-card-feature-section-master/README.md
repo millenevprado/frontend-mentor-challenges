@@ -9,7 +9,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with(#built-with)
+  - [Built with](#built-with)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -32,7 +32,7 @@ This is my result of the challenge:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://github.com/millenevprado/frontend-mentor-challenges/blob/main/four-card-feature-section-master/index.html)
 
 ## My process
 
