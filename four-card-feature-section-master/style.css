@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', 'sans-serif';
+}
+
+header{
+    margin: 50px auto;  /*auto -> faz com que vá para o centro da pag*/
+    max-width: 500px;
+    text-align: center;
+}
+
+h1{
+    font-weight: 200;
+    margin: 0;
+    
+}
+
+h1.strong{
+    font-weight: 600;
+    color:hsl(234, 12%, 34%);
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center; /* centraliza box*/
+    max-width: 1440px; /* container acomoda as 4 box, sem o max, ele estende sobre a tela */
+}
+
+.box{
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px;
+    position: relative; /* para a posição da borda ir para a box, se não colocar vai para o top da pag*/
+    overflow: hidden; /* para não cobrir a borda */
+    width: 350px;
+    margin: 15px;
+
+
+}
+
+.box::after{
+    content: '';    
+    position: absolute; /* em relação a box*/
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+
+}
+
+.box-red::after{
+    background-color: hsl(0, 78%, 62%);
+}
+
+.box-cyan::after{
+    background-color: hsl(180, 62%, 55%);
+}
+
+.box-orange::after{
+    background-color: hsl(34, 97%, 64%);
+}
+
+.box-blue::after{
+    background-color: hsl(212, 86%, 64%);
+}
+
+.box-push{
+    transform: translateY(50%); 
+}
+
+h2{
+    color: hsl(234, 12%, 34%);
+    margin: 0;
+}
+
+.box p{
+    margin: 15px 0 30px;
+}
+
+.box img{
+    display: block;
+    margin-left: auto;
+
+}
+
+footer{
+    text-align: center;
+}
+
+@media (max-width: 775px) {
+    .box-push{
+        transform: translateY(0);
+    }
+}
