@@ -34,7 +34,7 @@ This is my result of the challenge:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/millenevprado/frontend-mentor-challenges/blob/main/four-card-feature-section-master/index.html)
+- Solution URL: [Solution URL here](https://github.com/millenevprado/frontend-mentor-challenges/blob/main/intro-component-with-signup-form-master/index.html)
 
 ## My process
 
