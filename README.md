@@ -4,7 +4,5 @@
 
 ### DESAFIOS CUMPRIDOS: 
 
-* [Four card feature section ](https://github.com/millenevprado/frontend-mentor-challenges/tree/main/four-card-feature-section-master)
-* [Intro component with sign up form solution](https://github.com/millenevprado/frontend-mentor-challenges/tree/main/intro-component-with-signup-form-master)
-* [Base Apparel coming soon page solution](https://github.com/millenevprado/frontend-mentor-challenges/tree/main/base-apparel-coming-soon-master)
+https://github.com/millenevprado/frontend-mentor-challenges/blob/main/index.html
 
