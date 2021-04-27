@@ -1,8 +1,16 @@
 # FRONTEND MENTOR CHALLENGES :woman_technologist:
 
-## Este repositório contém minhas soluções dos desafios propostos pelo Frontend Mentor [frontendmentor.io/challenges](https://www.frontendmentor.io/challenges) .
+## MY SOLUTIONS FOR THE FRONTEND MENTOR CHALLENGES
 
-### DESAFIOS CUMPRIDOS: 
+### Completed challenges:
 
-[Lista dos desafios cumpridos](https://ecstatic-allen-fd36b5.netlify.app/)
+See them live in the list below
+
+[List of all completed challenges](https://ecstatic-allen-fd36b5.netlify.app/)
+
+#### See all challenges proposed here: 
+
+[Frontend Mentor Challenges](https://www.frontendmentor.io/)
+
+
 
