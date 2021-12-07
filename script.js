@@ -1,8 +1,9 @@
 const projects = [
-    'four-card-feature-section-master',
-    'base-apparel-coming-soon-master',
-    'intro-component-with-signup-form-master',
-    'single-price-grid-component-master'
+  'four-card-feature-section-master',
+  'base-apparel-coming-soon-master',
+  'intro-component-with-signup-form-master',
+  'single-price-grid-component-master',
+  'tip-calculator-app-master'
 ];
 
 const list = document.getElementById('list');
