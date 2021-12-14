@@ -44,6 +44,12 @@
         color: indianred;
         font-size: 1.5rem;
         font-weight: 700;
+        opacity: 0;
+      }
+
+      .show-error-msg {
+        transition: opacity 1s ease-in-out;
+        opacity: 1;
       }
     }
 

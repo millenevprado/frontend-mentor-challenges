@@ -1,11 +1,16 @@
-// constants
+// get constants
 const bill = document.getElementById('input-bill');
 const tipBtns = document.querySelectorAll('.tip');
 const tipCustom = document.getElementById('input-tip');
+const people = document.getElementById('input-people');
+const errorMsg = document.querySelector('.error-msg');
+const results = document.querySelectorAll('.value');
+const resetBtn = document.querySelector('.reset');
 
-// default values
-let billValue = 0.0; // default value
-let tipValue = 0.15; // default value -> 15% btn is active
+// set default values
+let billValue = 0.0;
+let tipValue = 0.15;
+let peopleValue = 1;
 
 // validations
 const validateFloat = (num) => {
@@ -18,6 +23,20 @@ const validateInt = (num) => {
   return num.match(rgx);
 }
 
+
+// calculate tip value
+const calculateTip = () => {
+  if (peopleValue >= 1) {
+    let tipAmount = (billValue * tipValue) / peopleValue;
+    let total = billValue * (tipValue + 1) / peopleValue;
+    results[0].innerHTML = `$ ${tipAmount.toFixed(2)}`;
+    results[1].innerHTML = `$ ${total.toFixed(2)}`;
+  } else {
+    results[0].innerHTML = "0.0";
+    results[1].innerHTML = "0.0";
+  }
+}
+
 // callbacks
 const setBillValue = () => {
   if (bill.value.includes(',')) {
@@ -28,7 +47,8 @@ const setBillValue = () => {
   }
 
   billValue = parseFloat(bill.value, 10);
-  console.log(billValue);
+
+  calculateTip();
 }
 
 const handleBtnTipClick = (event) => {
@@ -44,7 +64,10 @@ const handleBtnTipClick = (event) => {
 
   // clear custom tip
   tipCustom.value = '';
+
+  calculateTip();
 }
+
 const setTipCsutomValue = () => {
   if (!validateInt(tipCustom.value)) {
     tipCustom.value = tipCustom.value.substring(0, tipCustom.value.length-1);
@@ -55,7 +78,36 @@ const setTipCsutomValue = () => {
   tipBtns.forEach((btn) => {
     btn.classList.remove('btn-active');
   });
+
+  if (tipCustom.value !== ''){
+    calculateTip();
+  }
 };
+
+const setPeopleValue = () => {
+  if (!validateInt(people.value)) {
+    people.value = people.value.substring(0, people.value.length - 1);
+  }
+
+  peopleValue = parseFloat(people.value, 10);
+
+  if(peopleValue <= 0){
+    errorMsg.classList.add('show-error-msg');
+  }
+
+  calculateTip();
+}
+
+// reset option
+const reset = () => {
+  bill.value = '0.0';
+  setBillValue();
+
+  tipBtns[2].click();
+
+  peopleValue = '1';
+  setPeopleValue();
+}
 
 // event listeners
 bill.addEventListener('input', setBillValue);
@@ -63,3 +115,5 @@ tipBtns.forEach((btn) => {
   btn.addEventListener('click', handleBtnTipClick);
 });
 tipCustom.addEventListener('input', setTipCsutomValue);
+people.addEventListener('input', setPeopleValue);
+resetBtn.addEventListener('click', reset);

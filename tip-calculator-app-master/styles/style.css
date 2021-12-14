@@ -92,6 +92,13 @@ body {
   color: indianred;
   font-size: 1.5rem;
   font-weight: 700;
+  opacity: 0;
+}
+
+.card .input .label-wrapper .show-error-msg {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
 }
 
 .card .input .input-wrapper {
