@@ -14,6 +14,22 @@ body {
   background-color: #c5e4e7;
 }
 
+.attribution {
+  margin: 4rem 0 2rem 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #00494d;
+  -webkit-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+}
+
+.attribution a:hover {
+  color: #5e7a7d;
+}
+
 .container {
   width: 100%;
   display: -webkit-box;

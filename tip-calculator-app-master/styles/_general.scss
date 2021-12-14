@@ -12,3 +12,18 @@ body {
   font-family: 'Space Mono', monospace;
   background-color: $light-grayish-cyan;
 }
+
+.attribution {
+  margin: 4rem 0 2rem 0;
+  font-size: 14px;
+  text-align: center;
+
+  a {
+    color: $very-dark-cyan;
+    transition: color .5s ease-in-out;
+
+    &:hover {
+      color: $darker-grayish-cyan;
+    }
+  }
+}
